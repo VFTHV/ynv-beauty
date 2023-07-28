@@ -1,0 +1,11 @@
+- Fonts: 
+    * Bitter (400, 700)
+    * Old Standard TT (400, 700)
+    * Roboto (300, 400, 500, 700)
+
+- Download all pictures from WebFlow
+- Find out the @ media screen sizes for current website
+
+- Find javascript libraries that do carousels
+- Find javascript libraries that do appearance of text
+- Find CSS libraries that do button fill with time

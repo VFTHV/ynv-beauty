@@ -12,27 +12,29 @@ import SubmitForm from './components/SubmitForm';
 
 function App() {
   return (
-    <div className="container">
-      <section className="home">
-        <header>
-          <div>
+    <div className="">
+      <section className="home container">
+        <header className="header">
+          <div className="logo">
             <img src={'../public/logo.png'} alt="" />
           </div>
-          <RxHamburgerMenu />
+          <RxHamburgerMenu color="white" size={30} className="menu" />
         </header>
-        <nav>
-          <ul>
+        <nav className="nav-head">
+          <ul className="nav-items">
             <li>
-              <a href="#">Home</a>
+              <a href="#">HOME</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#">ABOUT</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#">SERVICES</a>
             </li>
             <li>
-              <a href="#">Book Now</a>
+              <a className="cta-btn" href="#">
+                BOOK NOW!
+              </a>
             </li>
           </ul>
         </nav>

@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Icon brands 400";
+  font-family: "Icon brands";
   src: url("./fonts/icon-brands-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Icon solid 900";
+  font-family: "Icon solid";
   src: url("./fonts/icon-solid-900.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -28,7 +28,9 @@ ul {
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Muli";
 }
 
 a {
@@ -43,4 +45,65 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.container {
+  padding-inline: 1.5rem;
+}
+
+.cta-btn {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  text-align: center;
+}
+.cta-btn:hover {
+  border-color: pink;
+  color: pink;
+}
+
+.home {
+  background-image: url("../../public/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.home .header {
+  height: 4rem;
+  display: flex;
+  padding-block: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .header .menu {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.home .nav-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 14rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.home .nav-head .nav-items {
+  padding: 3rem;
+}
+.home .nav-head .nav-items li {
+  margin-block: 1rem;
+}
+.home .nav-head .nav-items li:last-child {
+  margin-top: 2rem;
+}
+
+.logo {
+  height: 100%;
+}
+.logo img {
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */

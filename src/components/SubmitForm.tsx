@@ -46,8 +46,8 @@ function SubmitForm() {
       <textarea
         name="message"
         id="message"
-        cols="30"
-        rows="10"
+        cols={30}
+        rows={10}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Your Message"

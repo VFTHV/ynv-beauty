@@ -1,8 +1,7 @@
+import Home from './components/Home';
 import About from './components/About';
 import BookNow from './components/BookNow';
-import Home from './components/Home';
 import Services from './components/Services';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import {
   HiOutlineLocationMarker,
   HiOutlinePhone,
@@ -13,33 +12,8 @@ import SubmitForm from './components/SubmitForm';
 function App() {
   return (
     <div className="">
-      <section className="home container">
-        <header className="header">
-          <div className="logo">
-            <img src={'../public/logo.png'} alt="" />
-          </div>
-          <RxHamburgerMenu color="white" size={30} className="menu" />
-        </header>
-        <nav className="nav-head">
-          <ul className="nav-items">
-            <li>
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">SERVICES</a>
-            </li>
-            <li>
-              <a className="cta-btn" href="#">
-                BOOK NOW!
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section className="about">
+      <Home />
+      <section id="about" className="about">
         <div>
           <img src={'../public/logo.png'} alt="" />
         </div>
@@ -56,7 +30,7 @@ function App() {
           <p>YnV Beauty is a Luxury Oasis for Your Skin!!!</p>
         </article>
       </section>
-      <section className="services">
+      <section id="services" className="services">
         <div className="service">
           <h2>Classic Facial</h2>
           <article>
@@ -68,7 +42,7 @@ function App() {
           <img src="" alt="" />
         </div>
       </section>
-      <footer>
+      <footer id="footer">
         <h1>Get in Touch With Us And We'll Help Your Skin!</h1>
         <h3>
           Interested in our spa services? We want your spa experience to be a

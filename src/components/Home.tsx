@@ -54,6 +54,7 @@ function Home() {
         animate={{
           x: isMenuOpen ? navWidth : 0,
         }}
+        transition={{ ease: 'easeInOut' }}
         ref={navRef}
       >
         <ul className="nav-items">

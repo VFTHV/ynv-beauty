@@ -101,7 +101,7 @@ h6 {
 }
 
 .home {
-  background-image: url("../../public/background.jpg");
+  background-image: url("/background.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -123,7 +123,7 @@ h6 {
 .home .nav-head {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -14rem;
   bottom: 0;
   width: 14rem;
   background-color: rgba(0, 0, 0, 0.5);

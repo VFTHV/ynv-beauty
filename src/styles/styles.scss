@@ -9,22 +9,17 @@
   border: 1px solid white;
   font-size: 11px;
   background: none;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.8rem;
   letter-spacing: 2px;
   text-align: center;
-  transition: border, color 0.5s;
-  &:hover {
-    border-color: #f59b90;
-    color: #f59b90;
-  }
 }
 
 .cta-container {
   margin-block: 2rem;
   position: relative;
   border: 1px solid white;
-  transition: border 0.5s;
+
   cursor: pointer;
 
   .cta-btn2 {
@@ -45,20 +40,13 @@
     top: 0;
     z-index: 2;
   }
+
   .button-background {
     position: absolute;
     top: 0;
     height: 100%;
     width: 0;
     background-color: #f59b90;
-    transition: width 0.5s;
-  }
-
-  &:hover .button-background {
-    width: 100%;
-  }
-  &:hover {
-    border-color: #f59c90b2;
   }
 }
 
@@ -92,16 +80,20 @@
   .nav-head {
     position: fixed;
     top: 0;
-    left: -14rem;
+    left: -20rem;
     bottom: 0;
-    width: 14rem;
+    width: 20rem;
     background-color: rgba($color: #000000, $alpha: 0.5);
     .nav-items {
       padding: 3rem;
       li {
-        margin-block: 1rem;
-        &:last-child {
-          margin-top: 2rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        .nav-item {
+          display: block;
+          height: 100%;
+          width: 100%;
         }
       }
     }
@@ -112,5 +104,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (hover: hover) {
+  .cta-btn {
+    transition: border, color 0.5s;
+    &:hover {
+      border-color: #f59c90b2;
+      color: #f59c90b2;
+    }
+  }
+  .cta-container {
+    transition: border 0.5s;
+
+    .button-background {
+      transition: width 0.5s;
+    }
+
+    &:hover .button-background {
+      width: 100%;
+    }
+    &:hover {
+      border-color: #f59c90b2;
+    }
   }
 }

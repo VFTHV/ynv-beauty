@@ -57,16 +57,22 @@ function Home() {
         ref={navRef}
       >
         <ul className="nav-items">
-          <li>
-            <a href="#home">HOME</a>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <a className="nav-item" href="#home">
+              HOME
+            </a>
           </li>
-          <li>
-            <a href="#about">ABOUT</a>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <a className="nav-item" href="#about">
+              ABOUT
+            </a>
           </li>
-          <li>
-            <a href="#services">SERVICES</a>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <a className="nav-item" href="#services">
+              SERVICES
+            </a>
           </li>
-          <li>
+          <li onClick={() => setIsMenuOpen(false)}>
             <a className="cta-btn" href="#footer">
               BOOK NOW!
             </a>

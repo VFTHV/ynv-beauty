@@ -42,22 +42,16 @@ h6 {
   border: 1px solid white;
   font-size: 11px;
   background: none;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.8rem;
   letter-spacing: 2px;
   text-align: center;
-  transition: border, color 0.5s;
-}
-.cta-btn:hover {
-  border-color: #f59b90;
-  color: #f59b90;
 }
 
 .cta-container {
   margin-block: 2rem;
   position: relative;
   border: 1px solid white;
-  transition: border 0.5s;
   cursor: pointer;
 }
 .cta-container .cta-btn2 {
@@ -84,13 +78,6 @@ h6 {
   height: 100%;
   width: 0;
   background-color: #f59b90;
-  transition: width 0.5s;
-}
-.cta-container:hover .button-background {
-  width: 100%;
-}
-.cta-container:hover {
-  border-color: rgba(245, 156, 144, 0.6980392157);
 }
 
 .logo {
@@ -124,19 +111,23 @@ h6 {
 .home .nav-head {
   position: fixed;
   top: 0;
-  left: -14rem;
+  left: -20rem;
   bottom: 0;
-  width: 14rem;
+  width: 20rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .home .nav-head .nav-items {
   padding: 3rem;
 }
 .home .nav-head .nav-items li {
-  margin-block: 1rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
 }
-.home .nav-head .nav-items li:last-child {
-  margin-top: 2rem;
+.home .nav-head .nav-items li .nav-item {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .home .home-content {
   flex: 1;
@@ -144,4 +135,26 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (hover: hover) {
+  .cta-btn {
+    transition: border, color 0.5s;
+  }
+  .cta-btn:hover {
+    border-color: rgba(245, 156, 144, 0.6980392157);
+    color: rgba(245, 156, 144, 0.6980392157);
+  }
+  .cta-container {
+    transition: border 0.5s;
+  }
+  .cta-container .button-background {
+    transition: width 0.5s;
+  }
+  .cta-container:hover .button-background {
+    width: 100%;
+  }
+  .cta-container:hover {
+    border-color: rgba(245, 156, 144, 0.6980392157);
+  }
 }/*# sourceMappingURL=styles.css.map */

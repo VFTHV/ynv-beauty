@@ -7,25 +7,24 @@ function Home() {
   const [isNavMounted, setIsNavMounted] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
-  const burgerMenuRef = useRef(null);
+  const burgerMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setIsNavMounted(true);
   }, []);
-
   useEffect(() => {
     const closeMenuOnClickOutside = (e: MouseEvent) => {
       if (
         isMenuOpen &&
         navRef.current &&
-        !navRef.current.contains(e.target as Node)
+        !navRef.current.contains(e.target as Node) &&
+        burgerMenuRef.current &&
+        !burgerMenuRef.current.contains(e.target as Node)
       ) {
-        console.log(e.target);
         setIsMenuOpen(false);
       }
     };
     document.addEventListener('mousedown', closeMenuOnClickOutside);
-
     return () => {
       document.removeEventListener('mousedown', closeMenuOnClickOutside);
     };
@@ -46,12 +45,9 @@ function Home() {
         <div className="logo">
           <img src={'/logo.png'} alt="" />
         </div>
-        <RxHamburgerMenu
-          color="white"
-          size={30}
-          className="menu"
-          onClick={handleMenuToggle}
-        />
+        <div className="menu" ref={burgerMenuRef}>
+          <RxHamburgerMenu color="white" size={30} onClick={handleMenuToggle} />
+        </div>
       </header>
       <motion.nav
         className="nav-head"

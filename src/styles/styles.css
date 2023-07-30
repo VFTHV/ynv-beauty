@@ -103,6 +103,7 @@ h6 {
 .home {
   background-image: url("/background.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;

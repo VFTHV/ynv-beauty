@@ -5,7 +5,7 @@ function Home() {
     <section id="home" className="home container">
       <header className="header">
         <div className="logo">
-          <img src={'../public/logo.png'} alt="" />
+          <img src={'/logo.png'} alt="" />
         </div>
         <RxHamburgerMenu color="white" size={30} className="menu" />
       </header>
@@ -27,12 +27,13 @@ function Home() {
           </li>
         </ul>
       </nav>
-
-      <h1 className="h1">YnV Beauty</h1>
-      <div>
-        <a className="cta-btn2" href="#footer">
-          BOOK NOW
-        </a>
+      <div className="home-content">
+        <h1 className="h1">YnV Beauty</h1>
+        <div className="cta-container">
+          <a className="cta-btn2" href="#footer"></a>
+          <div className="btn-text">BOOK NOW</div>
+          <div className="button-background"></div>
+        </div>
       </div>
     </section>
   );

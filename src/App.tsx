@@ -15,7 +15,7 @@ function App() {
       <Home />
       <section id="about" className="about">
         <div>
-          <img src={'../public/logo.png'} alt="" />
+          <img src={'logo.png'} alt="" />
         </div>
         <h1>An Incredibl SPa Experience in Sugar Land, Tx</h1>
         <article>

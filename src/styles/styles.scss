@@ -7,25 +7,65 @@
 
 .cta-btn {
   border: 1px solid white;
+  font-size: 11px;
   background: none;
   padding-inline: 1rem;
   padding-block: 0.5rem;
+  letter-spacing: 2px;
   text-align: center;
+  transition: border, color 0.5s;
   &:hover {
-    border-color: pink;
-    color: pink;
+    border-color: #f59b90;
+    color: #f59b90;
   }
 }
 
-.cta-bt2n {
+.cta-container {
+  margin-block: 2rem;
+  position: relative;
   border: 1px solid white;
-  background: none;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  text-align: center;
+  transition: border 0.5s;
+  cursor: pointer;
+
+  .cta-btn2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    width: 175px;
+    height: 60px;
+  }
+  .btn-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    top: 0;
+    z-index: 2;
+  }
+  .button-background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #f59b90;
+    transition: width 0.5s;
+  }
+
+  &:hover .button-background {
+    width: 100%;
+  }
   &:hover {
-    border-color: pink;
-    color: pink;
+    border-color: #f59c90b2;
+  }
+}
+
+.logo {
+  height: 100%;
+  img {
+    height: 100%;
   }
 }
 
@@ -33,6 +73,8 @@
   background-image: url('../../public/background.jpg');
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   .header {
     height: 4rem;
     display: flex;
@@ -63,11 +105,11 @@
       }
     }
   }
-}
-
-.logo {
-  height: 100%;
-  img {
-    height: 100%;
+  .home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

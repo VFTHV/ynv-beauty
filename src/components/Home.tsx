@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useState, useRef, useEffect, ChangeEvent } from 'react';
+import { motion, useScroll } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 function Home() {

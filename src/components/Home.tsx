@@ -1,5 +1,6 @@
-import { motion, useScroll } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 function Home() {
@@ -58,20 +59,44 @@ function Home() {
         ref={navRef}
       >
         <ul className="nav-items">
-          <li onClick={() => setIsMenuOpen(false)}>
-            <a className="nav-item" href="#home">
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className="nav-item"
+              to=""
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               HOME
-            </a>
+            </Link>
           </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <a className="nav-item" href="#about">
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className="nav-item"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               ABOUT
-            </a>
+            </Link>
           </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <a className="nav-item" href="#services">
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className="nav-item"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               SERVICES
-            </a>
+            </Link>
           </li>
           <li onClick={() => setIsMenuOpen(false)}>
             <a className="cta-btn" href="#footer">

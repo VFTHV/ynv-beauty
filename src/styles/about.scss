@@ -1,0 +1,17 @@
+.about {
+  background-image: url('/background2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  .logo-container {
+    height: 6.5rem;
+    margin-inline: auto;
+    margin-top: 6.5rem;
+    margin-bottom: 2.5rem;
+  }
+}

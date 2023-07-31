@@ -13,23 +13,7 @@ function App() {
   return (
     <div className="">
       <Home />
-      <section id="about" className="about">
-        <div>
-          <img src={'logo.png'} alt="" />
-        </div>
-        <h1>An Incredibl SPa Experience in Sugar Land, Tx</h1>
-        <article>
-          <p>
-            Our licensed professionals build specific treatment program for
-            every guest.
-          </p>
-          <p>
-            We use only newest equipment and high quality medical products. Feel
-            yourself special with our individual approach!
-          </p>
-          <p>YnV Beauty is a Luxury Oasis for Your Skin!!!</p>
-        </article>
-      </section>
+      <About />
       <section id="services" className="services">
         <div className="service">
           <h2>Classic Facial</h2>

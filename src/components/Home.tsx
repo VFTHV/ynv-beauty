@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import '../styles/home.css';
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,7 +67,6 @@ function Home() {
               to=""
               spy={true}
               smooth={true}
-              offset={50}
               duration={500}
             >
               HOME
@@ -79,7 +79,6 @@ function Home() {
               to="about"
               spy={true}
               smooth={true}
-              offset={50}
               duration={500}
             >
               ABOUT
@@ -92,25 +91,40 @@ function Home() {
               to="services"
               spy={true}
               smooth={true}
-              offset={50}
               duration={500}
             >
               SERVICES
             </Link>
           </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <a className="cta-btn" href="#footer">
+          <li>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="cta-btn"
+            >
               BOOK NOW!
-            </a>
+            </Link>
           </li>
         </ul>
       </motion.nav>
       <div className="home-content">
         <h1 className="h1">YnV Beauty</h1>
         <div className="cta-container">
-          <a className="cta-btn2" href="#footer"></a>
-          <div className="btn-text">BOOK NOW</div>
-          <div className="button-background"></div>
+          <Link
+            className="cta-btn2"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={() => console.log('clicked Book Now')}
+          >
+            <div className="btn-text">BOOK NOW</div>
+            <div className="button-background"></div>
+          </Link>
         </div>
       </div>
     </section>

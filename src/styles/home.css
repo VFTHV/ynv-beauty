@@ -1,45 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@300&display=swap");
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-family: "Old Standard TT", serif;
-}
-
-.h1 {
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.container {
-  padding-inline: 1.5rem;
-}
-
 .cta-btn {
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   font-size: 11px;
   background: none;
   padding-inline: 1.5rem;
@@ -51,7 +11,7 @@ h6 {
 .cta-container {
   margin-block: 2rem;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   cursor: pointer;
 }
 .cta-container .cta-btn2 {
@@ -77,14 +37,7 @@ h6 {
   top: 0;
   height: 100%;
   width: 0;
-  background-color: #f59b90;
-}
-
-.logo {
-  height: 100%;
-}
-.logo img {
-  height: 100%;
+  background-color: rgb(245, 155, 144);
 }
 
 .home {
@@ -129,6 +82,7 @@ h6 {
   display: block;
   height: 100%;
   width: 100%;
+  font-size: 13px;
 }
 .home .home-content {
   flex: 1;
@@ -143,8 +97,8 @@ h6 {
     transition: border, color 0.5s;
   }
   .cta-btn:hover {
-    border-color: rgba(245, 156, 144, 0.6980392157);
-    color: rgba(245, 156, 144, 0.6980392157);
+    border-color: rgb(245, 156, 144);
+    color: rgb(245, 156, 144);
   }
   .cta-container {
     transition: border 0.5s;
@@ -156,6 +110,6 @@ h6 {
     width: 100%;
   }
   .cta-container:hover {
-    border-color: rgba(245, 156, 144, 0.6980392157);
+    border-color: rgb(245, 156, 144);
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=home.css.map */

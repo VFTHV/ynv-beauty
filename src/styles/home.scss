@@ -1,12 +1,5 @@
-@import 'basic_styles';
-@import 'variables';
-
-.container {
-  padding-inline: 1.5rem;
-}
-
 .cta-btn {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 1);
   font-size: 11px;
   background: none;
   padding-inline: 1.5rem;
@@ -18,7 +11,7 @@
 .cta-container {
   margin-block: 2rem;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 1);
 
   cursor: pointer;
 
@@ -46,14 +39,7 @@
     top: 0;
     height: 100%;
     width: 0;
-    background-color: #f59b90;
-  }
-}
-
-.logo {
-  height: 100%;
-  img {
-    height: 100%;
+    background-color: rgba(245, 155, 144, 1);
   }
 }
 
@@ -83,7 +69,7 @@
     left: -20rem;
     bottom: 0;
     width: 20rem;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgba(0, 0, 0, $alpha: 0.5);
     .nav-items {
       padding: 3rem;
       li {
@@ -95,6 +81,7 @@
           display: block;
           height: 100%;
           width: 100%;
+          font-size: 13px;
         }
       }
     }
@@ -112,8 +99,8 @@
   .cta-btn {
     transition: border, color 0.5s;
     &:hover {
-      border-color: #f59c90b2;
-      color: #f59c90b2;
+      border-color: rgba(245, 156, 144, 1);
+      color: rgba(245, 156, 144, 1);
     }
   }
   .cta-container {
@@ -127,7 +114,7 @@
       width: 100%;
     }
     &:hover {
-      border-color: #f59c90b2;
+      border-color: rgba(245, 156, 144, 1);
     }
   }
 }

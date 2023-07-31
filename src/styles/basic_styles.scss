@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
@@ -33,4 +33,20 @@ h6 {
 .h1 {
   font-size: 60px;
   font-weight: 400;
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.container {
+  padding-inline: 1.5rem;
+}
+
+.logo {
+  height: 100%;
+  img {
+    height: 100%;
+  }
 }

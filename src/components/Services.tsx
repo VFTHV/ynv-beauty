@@ -1,12 +1,13 @@
 import '../styles/services.css';
-import { content } from '../assets/content';
+import { services } from '../assets/content';
 import Service from './Service';
 
 function Services() {
-  const { classicFacial } = content.services;
   return (
     <section id="services" className="services container">
-      <Service service={classicFacial} imgSrc="/classic_facial_small.jpg" />
+      {services.map((service) => (
+        <Service service={service} />
+      ))}
     </section>
   );
 }

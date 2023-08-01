@@ -14,18 +14,7 @@ function App() {
     <div className="">
       <Home />
       <About />
-      <section id="services" className="services">
-        <div className="service">
-          <h2>Classic Facial</h2>
-          <article>
-            For a deeper clean, this purifying treatment includes a double
-            exfoliating peel and a gentle botanical deep-cleansing mask to
-            rejuvenate the skin, improve cell turnover, and minimize pores. 60
-            minutes
-          </article>
-          <img src="" alt="" />
-        </div>
-      </section>
+      <Services />
       <footer id="footer">
         <h1>Get in Touch With Us And We'll Help Your Skin!</h1>
         <h3>

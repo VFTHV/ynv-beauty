@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { HiOutlineMenu } from 'react-icons/hi';
 import '../styles/home.css';
 
 function Home() {
@@ -48,7 +48,7 @@ function Home() {
           <img src={'/logo.png'} alt="" />
         </div>
         <div className="menu" ref={burgerMenuRef}>
-          <RxHamburgerMenu color="white" size={30} onClick={handleMenuToggle} />
+          <HiOutlineMenu color="white" size={35} onClick={handleMenuToggle} />
         </div>
       </header>
       <motion.nav

@@ -1,0 +1,24 @@
+.services {
+  background-color: rgb(54, 16, 0);
+  padding-block: 1rem;
+
+  .service {
+    margin-block: 2rem;
+    .service-content {
+      background-image: url('/background5.png');
+      background-size: 9rem;
+      background-repeat: no-repeat;
+
+      p {
+        line-height: 1.86rem;
+        color: rgba(177, 171, 162, 0.7);
+        font-size: 14px;
+      }
+    }
+    .service-image {
+      object-fit: cover;
+      height: 20rem;
+      width: 100%;
+    }
+  }
+}

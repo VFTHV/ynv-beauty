@@ -35,8 +35,12 @@ function ContactUs() {
             <a href="mailto: info@ynv-beauty.com">info@ynv-beauty.com</a>
           </div>
           <div className="contact">
-            <FaFacebookF className="s-media-icon" />
-            <FaInstagram className="s-media-icon" />
+            <a href="https://www.facebook.com/">
+              <FaFacebookF className="s-media-icon" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <FaInstagram className="s-media-icon" />
+            </a>
           </div>
         </div>
       </div>

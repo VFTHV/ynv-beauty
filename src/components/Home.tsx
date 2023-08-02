@@ -99,7 +99,7 @@ function Home() {
           <li>
             <Link
               onClick={() => setIsMenuOpen(false)}
-              to="services"
+              to="contact-us"
               spy={true}
               smooth={true}
               duration={500}
@@ -115,7 +115,7 @@ function Home() {
         <div className="cta-container">
           <Link
             className="cta-btn2"
-            to="services"
+            to="contact-us"
             spy={true}
             smooth={true}
             offset={50}

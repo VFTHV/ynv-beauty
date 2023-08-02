@@ -122,7 +122,7 @@ function Home() {
             duration={500}
             onClick={() => console.log('clicked Book Now')}
           >
-            <div className="btn-text">BOOK NOW</div>
+            <div className="btn-text">Book Now</div>
             <div className="button-background"></div>
           </Link>
         </div>

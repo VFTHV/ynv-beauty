@@ -49,7 +49,7 @@
   flex-direction: column;
 }
 .home .header {
-  height: 4rem;
+  height: 4.5rem;
   display: flex;
   padding-block: 2rem;
   justify-content: center;

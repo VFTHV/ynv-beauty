@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import '../styles/SubmitForm.css';
 
 function SubmitForm() {
@@ -8,9 +9,20 @@ function SubmitForm() {
   const [tel, setTel] = useState('');
   const [reason, setReason] = useState('');
   const [message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm('xgejonyw');
+
+  if (state.succeeded) {
+    return <p>Thank for you appointment request</p>;
+  }
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(e);
+    // handleSubmit(e.currentTarget);
+  };
 
   return (
-    <form action="submit" className="form">
+    <form action="submit" className="form" onSubmit={handleSubmit}>
       <h1 className="h3">Make an Appointment</h1>
       <div className="form-grid">
         <input
@@ -61,7 +73,11 @@ function SubmitForm() {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Your Message"
         ></textarea>
-        <button type="submit" className="submit-btn">
+        <button
+          type="submit"
+          className="submit-btn"
+          disabled={state.submitting}
+        >
           SUBMIT MESSAGE
         </button>
       </div>

@@ -1,5 +1,37 @@
 .contact-us {
   background-image: url('background3.jpg');
+  // background-position: center;
+  padding-block: 2.5rem;
 
-  background-position: center;
+  .contact-details {
+    margin-bottom: 3rem;
+    & > * {
+      margin-block: 1rem;
+    }
+
+    .contacts {
+      & > * {
+        margin-block: 1rem;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      .contact {
+        display: flex;
+        .contact-icon {
+          margin-right: 0.5rem;
+          background-color: rgb(110, 80, 70);
+          border-radius: 2rem;
+          padding: 1px;
+          transform: scale(1.4);
+        }
+        .s-media-icon {
+          transform: scale(2);
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
 }

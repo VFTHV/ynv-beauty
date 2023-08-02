@@ -1,4 +1,30 @@
 .contact-us {
   background-image: url("background3.jpg");
-  background-position: center;
+  padding-block: 2.5rem;
+}
+.contact-us .contact-details {
+  margin-bottom: 3rem;
+}
+.contact-us .contact-details > * {
+  margin-block: 1rem;
+}
+.contact-us .contact-details .contacts > * {
+  margin-block: 1rem;
+}
+.contact-us .contact-details .contacts address {
+  font-style: normal;
+}
+.contact-us .contact-details .contacts .contact {
+  display: flex;
+}
+.contact-us .contact-details .contacts .contact .contact-icon {
+  margin-right: 0.5rem;
+  background-color: rgb(110, 80, 70);
+  border-radius: 2rem;
+  padding: 1px;
+  transform: scale(1.4);
+}
+.contact-us .contact-details .contacts .contact .s-media-icon {
+  transform: scale(2);
+  margin-right: 2rem;
 }/*# sourceMappingURL=contact_us.css.map */

@@ -1,3 +1,5 @@
+import InViewAnimate from './InViewAnimate';
+
 interface ServiceProps {
   service: { h3: string; text: string | string[]; imgSrc: string };
 }
@@ -16,10 +18,14 @@ function Service({ service }: ServiceProps) {
   return (
     <div className="service">
       <article className="service-content">
-        <h3 className="h3">{service.h3}</h3>
-        {renderParagraph()}
+        <InViewAnimate>
+          <h3 className="h3">{service.h3}</h3>
+        </InViewAnimate>
+        <InViewAnimate>{renderParagraph()}</InViewAnimate>
       </article>
-      <img className="service-image" src={service.imgSrc} alt="" />
+      <InViewAnimate>
+        <img className="service-image" src={service.imgSrc} alt="" />
+      </InViewAnimate>
     </div>
   );
 }

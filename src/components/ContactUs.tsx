@@ -5,18 +5,26 @@ import {
 } from 'react-icons/hi';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import SubmitForm from './SubmitForm';
+import InViewAnimate from './InViewAnimate';
 import '../styles/contact_us.css';
 
 function ContactUs() {
   return (
     <section className="contact-us container" id="contact-us">
       <div className="contact-details">
-        <h2 className="h2">Get in Touch With Us And We'll Help Your Skin!</h2>
-        <h5 className="h5">
-          Interested in our spa services? We want your spa experience to be a
-          memorable one.
-        </h5>
-        <h4 className="h4">Image Salon Studios</h4>
+        <InViewAnimate>
+          <h2 className="h2">Get in Touch With Us And We'll Help Your Skin!</h2>
+        </InViewAnimate>
+        <InViewAnimate>
+          <h5 className="h5">
+            Interested in our spa services? We want your spa experience to be a
+            memorable one.
+          </h5>
+        </InViewAnimate>
+        <InViewAnimate>
+          <h4 className="h4">Image Salon Studios</h4>
+        </InViewAnimate>
+
         <div className="contacts">
           <div className="contact">
             <HiOutlineLocationMarker className="contact-icon" />
@@ -34,17 +42,21 @@ function ContactUs() {
             <HiOutlineMail className="contact-icon" />
             <a href="mailto: info@ynv-beauty.com">info@ynv-beauty.com</a>
           </div>
-          <div className="contact">
-            <a href="https://www.facebook.com/">
-              <FaFacebookF className="s-media-icon" />
-            </a>
-            <a href="https://www.instagram.com/">
-              <FaInstagram className="s-media-icon" />
-            </a>
-          </div>
+          <InViewAnimate>
+            <div className="contact">
+              <a href="https://www.facebook.com/">
+                <FaFacebookF className="s-media-icon" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <FaInstagram className="s-media-icon" />
+              </a>
+            </div>
+          </InViewAnimate>
         </div>
       </div>
-      <SubmitForm />
+      <InViewAnimate>
+        <SubmitForm />
+      </InViewAnimate>
     </section>
   );
 }

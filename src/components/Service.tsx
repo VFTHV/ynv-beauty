@@ -4,9 +4,9 @@ interface ServiceProps {
 
 function Service({ service }: ServiceProps) {
   const renderParagraph = () => {
-    if (typeof service.text === 'object') {
+    if (Array.isArray(service.text)) {
       return service.text.map((text) => {
-        return <p>{text}</p>;
+        return <p key={text}>{text}</p>;
       });
     } else {
       return <p>{service.text}</p>;

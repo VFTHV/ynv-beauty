@@ -12,14 +12,12 @@ function SubmitForm() {
   const [state, handleSubmit] = useForm('xgejonyw');
 
   if (state.succeeded) {
-    return <p>Thank for you appointment request</p>;
+    return (
+      <div className="submitted">
+        <h1 className="form h3">Thank for your appointment request</h1>
+      </div>
+    );
   }
-
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(e);
-    // handleSubmit(e.currentTarget);
-  };
 
   return (
     <form action="submit" className="form" onSubmit={handleSubmit}>
@@ -28,14 +26,17 @@ function SubmitForm() {
         <input
           className="input"
           type="text"
+          name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="First Name*"
           required
         />
+        <ValidationError field="name" prefix="Name" errors={state.errors} />
         <input
           className="input"
           type="text"
+          name="last-name"
           value={lastName}
           onChange={(e) => setlastName(e.target.value)}
           placeholder="Last Name"
@@ -43,14 +44,18 @@ function SubmitForm() {
         <input
           className="input"
           type="email"
+          name="email"
+          id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email*"
           required
         />
+        <ValidationError field="email" prefix="Email" errors={state.errors} />
         <input
           className="input"
           type="tel"
+          name="phone-number"
           value={tel}
           onChange={(e) => setTel(e.target.value)}
           placeholder="Phone Number"
@@ -58,6 +63,7 @@ function SubmitForm() {
         <input
           className="input"
           type="text"
+          name="reason"
           value={reason}
           onChange={(e) => setReason(e.target.value)}
           placeholder="Reason for Visit*"

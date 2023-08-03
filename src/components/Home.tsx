@@ -38,6 +38,12 @@ function Home() {
     navWidth = navRef.current.getBoundingClientRect().width;
   }
 
+  const scrollProps = {
+    spy: true,
+    smooth: 'easeInOutQuint',
+    duration: 1600,
+  };
+
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
@@ -64,10 +70,8 @@ function Home() {
             <Link
               onClick={() => setIsMenuOpen(false)}
               className="nav-item"
-              to=""
-              spy={true}
-              smooth={true}
-              duration={500}
+              to="home"
+              {...scrollProps}
             >
               HOME
             </Link>
@@ -77,9 +81,7 @@ function Home() {
               onClick={() => setIsMenuOpen(false)}
               className="nav-item"
               to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
+              {...scrollProps}
             >
               ABOUT
             </Link>
@@ -89,9 +91,7 @@ function Home() {
               onClick={() => setIsMenuOpen(false)}
               className="nav-item"
               to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
+              {...scrollProps}
             >
               SERVICES
             </Link>
@@ -100,9 +100,7 @@ function Home() {
             <Link
               onClick={() => setIsMenuOpen(false)}
               to="contact-us"
-              spy={true}
-              smooth={true}
-              duration={500}
+              {...scrollProps}
               className="cta-btn"
             >
               BOOK NOW!
@@ -116,10 +114,7 @@ function Home() {
           <Link
             className="cta-btn2"
             to="contact-us"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
+            {...scrollProps}
             onClick={() => console.log('clicked Book Now')}
           >
             <div className="btn-text">Book Now</div>

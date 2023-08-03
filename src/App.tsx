@@ -1,8 +1,8 @@
 import Home from './components/Home';
 import About from './components/About';
-import BookNow from './components/ContactUs';
 import Services from './components/Services';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <About />
       <Services />
       <ContactUs />
+      <Footer />
     </>
   );
 }

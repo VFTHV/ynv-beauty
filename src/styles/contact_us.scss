@@ -1,6 +1,5 @@
 .contact-us {
   background-image: url('/background3.jpg');
-  // background-position: center;
   padding-block: 2.5rem;
 
   .contact-details {
@@ -14,10 +13,6 @@
         margin-block: 1rem;
       }
 
-      address {
-        font-style: normal;
-      }
-
       .contact {
         display: flex;
         .contact-icon {
@@ -27,11 +22,11 @@
           padding: 1px;
           transform: scale(1.4);
         }
-        .s-media-icon {
-          transform: scale(2);
-          margin-top: 0.5rem;
-          margin-right: 2rem;
-        }
+        // .s-media-icon {
+        //   transform: scale(2);
+        //   margin-top: 0.5rem;
+        //   margin-right: 2rem;
+        // }
       }
     }
   }

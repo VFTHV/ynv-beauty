@@ -11,9 +11,6 @@
 .contact-us .contact-details .contacts > * {
   margin-block: 1rem;
 }
-.contact-us .contact-details .contacts address {
-  font-style: normal;
-}
 .contact-us .contact-details .contacts .contact {
   display: flex;
 }
@@ -23,9 +20,4 @@
   border-radius: 2rem;
   padding: 1px;
   transform: scale(1.4);
-}
-.contact-us .contact-details .contacts .contact .s-media-icon {
-  transform: scale(2);
-  margin-top: 0.5rem;
-  margin-right: 2rem;
 }/*# sourceMappingURL=contact_us.css.map */

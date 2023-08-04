@@ -63,4 +63,14 @@ h6 {
 }
 .logo img {
   height: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+.s-media-icon {
+  transform: scale(2);
+  margin-top: 0.5rem;
+  margin-right: 2rem;
 }/*# sourceMappingURL=basic_styles.css.map */

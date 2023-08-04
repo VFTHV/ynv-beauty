@@ -1,0 +1,22 @@
+.footer {
+  background-color: #a87e72;
+  color: rgba(255, 248, 245, 0.6);
+  padding: 2rem 3rem;
+  text-align: center;
+}
+.footer .logo-wrapper {
+  height: 6rem;
+  margin-block: 1rem;
+}
+.footer .footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .contact-info {
+  margin-block: 3rem;
+  line-height: 2rem;
+}
+.footer .copyright {
+  font-family: "Old Standard TT", serif;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

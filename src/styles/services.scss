@@ -1,5 +1,5 @@
 .services {
-  background-color: rgb(54, 16, 0);
+  background-color: #fff8f5;
   padding-block: 1rem;
 
   .service {
@@ -9,9 +9,13 @@
       background-size: 9rem;
       background-repeat: no-repeat;
 
+      .h3 {
+        color: #43484e;
+      }
+
       p {
         line-height: 1.86rem;
-        color: rgba(177, 171, 162, 0.7);
+        color: rgba(67, 72, 78, 0.7);
         font-size: 14px;
       }
     }

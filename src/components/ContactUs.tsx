@@ -29,14 +29,14 @@ function ContactUs() {
           <div className="contact">
             <HiOutlineLocationMarker className="contact-icon" />
             <address>
-              <a href="https://www.google.com/maps/place/Image+Salon+Studios+at+Sugar+Land/@29.6033509,-95.6120836,17z/data=!3m1!4b1!4m6!3m5!1s0x8640e6edf1f139cd:0xe9500a21f53682b5!8m2!3d29.6033509!4d-95.6120836!16s%2Fg%2F1td7cjp5?entry=ttu">
-                15315 Southwest Freeway, Suite QZ4 Sugar Land, TX, 77478
+              <a href="https://www.google.com/maps/place/Sugar+Land,+TX+77498/@29.6396917,-95.6907728,13z/data=!3m1!4b1!4m6!3m5!1s0x8640e0cbf1f0eacf:0x3297e7e0443a413c!8m2!3d29.6338457!4d-95.6563119!16s%2Fm%2F07nqc4r?entry=ttu">
+                12345 Southwest Freeway, Suite ABC Sugar Land, TX, 77479
               </a>
             </address>
           </div>
           <div className="contact">
             <HiOutlinePhone className="contact-icon" />
-            <a href="tel:+19793270505">+1 979 327 05 05</a>
+            <a href="tel:+11234567890">+1 123 456 78 90</a>
           </div>
           <div className="contact">
             <HiOutlineMail className="contact-icon" />

@@ -111,12 +111,7 @@ function Home() {
       <div className="home-content">
         <h1 className="h1">YnV Beauty</h1>
         <div className="cta-container">
-          <Link
-            className="cta-btn2"
-            to="contact-us"
-            {...scrollProps}
-            onClick={() => console.log('clicked Book Now')}
-          >
+          <Link className="cta-btn2" to="contact-us" {...scrollProps}>
             <div className="btn-text">Book Now</div>
             <div className="button-background"></div>
           </Link>

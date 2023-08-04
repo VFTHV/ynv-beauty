@@ -17,10 +17,10 @@
   padding: 1rem;
 }
 .form .input::-moz-placeholder {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .form .input::placeholder {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .form textarea::-moz-placeholder {
   color: #43484e;

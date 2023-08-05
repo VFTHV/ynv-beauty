@@ -57,7 +57,9 @@
       }
       .service-image-wrapper,
       .service-content {
-        margin-block: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

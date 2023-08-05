@@ -16,6 +16,9 @@
   display: flex;
   justify-content: space-around;
 }
+.footer .footer-wrapper .footer-nav .navlink-wrapper {
+  cursor: pointer;
+}
 .footer .footer-wrapper .contact-info {
   margin-block: 3rem;
   line-height: 2rem;

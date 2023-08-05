@@ -15,6 +15,9 @@
     .footer-nav {
       display: flex;
       justify-content: space-around;
+      .navlink-wrapper {
+        cursor: pointer;
+      }
     }
     .contact-info {
       margin-block: 3rem;

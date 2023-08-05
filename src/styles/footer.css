@@ -1,22 +1,26 @@
 .footer {
   background-color: #a87e72;
   color: rgba(255, 248, 245, 0.6);
-  padding: 2rem 3rem;
+  padding: 2rem 0;
   text-align: center;
 }
-.footer .logo-wrapper {
+.footer .footer-wrapper {
+  max-width: 20rem;
+  margin-inline: auto;
+}
+.footer .footer-wrapper .logo-wrapper {
   height: 6rem;
   margin-block: 1rem;
 }
-.footer .footer-nav {
+.footer .footer-wrapper .footer-nav {
   display: flex;
   justify-content: space-around;
 }
-.footer .contact-info {
+.footer .footer-wrapper .contact-info {
   margin-block: 3rem;
   line-height: 2rem;
 }
-.footer .copyright {
+.footer .footer-wrapper .copyright {
   font-family: "Old Standard TT", serif;
   color: white;
 }/*# sourceMappingURL=footer.css.map */

@@ -1,24 +1,28 @@
 .footer {
   background-color: #a87e72;
   color: rgba(255, 248, 245, 0.6);
-  padding: 2rem 3rem;
+  padding: 2rem 0;
   text-align: center;
 
-  .logo-wrapper {
-    height: 6rem;
-    margin-block: 1rem;
-  }
+  .footer-wrapper {
+    max-width: 20rem;
+    margin-inline: auto;
+    .logo-wrapper {
+      height: 6rem;
+      margin-block: 1rem;
+    }
 
-  .footer-nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  .contact-info {
-    margin-block: 3rem;
-    line-height: 2rem;
-  }
-  .copyright {
-    font-family: 'Old Standard TT', serif;
-    color: white;
+    .footer-nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    .contact-info {
+      margin-block: 3rem;
+      line-height: 2rem;
+    }
+    .copyright {
+      font-family: 'Old Standard TT', serif;
+      color: white;
+    }
   }
 }

@@ -32,7 +32,7 @@ function SubmitForm() {
           placeholder="First Name*"
           required
         />
-        <ValidationError field="name" prefix="Name" errors={state.errors} />
+        {/* <ValidationError field="name" prefix="Name" errors={state.errors} /> */}
         <input
           className="input"
           type="text"
@@ -51,7 +51,7 @@ function SubmitForm() {
           placeholder="Email*"
           required
         />
-        <ValidationError field="email" prefix="Email" errors={state.errors} />
+        {/* <ValidationError field="email" prefix="Email" errors={state.errors} /> */}
         <input
           className="input"
           type="tel"

@@ -55,7 +55,8 @@
       .service-image-wrapper {
         flex: 1;
       }
-      .service-image-wrapper {
+      .service-image-wrapper,
+      .service-content {
         margin-block: auto;
       }
     }

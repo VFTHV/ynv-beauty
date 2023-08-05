@@ -51,7 +51,7 @@ function Home() {
     <section id="home" className="home container">
       <header className="header">
         <div className="logo">
-          <img src={'/logo.png'} alt="YnV Company Logo" />
+          <img src={'logo.png'} alt="YnV Company Logo" />
         </div>
         <div className="menu" ref={burgerMenuRef}>
           <HiOutlineMenu color="white" size={35} onClick={handleMenuToggle} />

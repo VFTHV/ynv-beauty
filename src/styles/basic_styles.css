@@ -79,4 +79,15 @@ address {
   .container {
     padding-inline: 2.8rem;
   }
+}
+@media only screen and (min-width: 767px) {
+  .container {
+    padding-inline: 4rem;
+  }
+  .h1 {
+    font-size: 100px;
+  }
+  .h2 {
+    font-size: 54px;
+  }
 }/*# sourceMappingURL=basic_styles.css.map */

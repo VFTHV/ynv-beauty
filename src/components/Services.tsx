@@ -5,7 +5,7 @@ import Service from './Service';
 
 function Services() {
   return (
-    <section id="services" className="services container">
+    <section id="services" className="services">
       {services.map((service) => (
         <Service key={service.h3} service={service} />
       ))}

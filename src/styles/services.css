@@ -1,13 +1,20 @@
 .services {
   background-color: #fff8f5;
   padding-block: 1rem;
+  padding-inline: 0.9rem;
 }
 .services .service {
   margin-block: 2rem;
+  background-image: url("/background4.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  display: flex;
+  flex-direction: column;
 }
 .services .service .service-content {
   background-image: url("/background5.png");
-  background-size: 9rem;
+  background-size: 30vw;
   background-repeat: no-repeat;
 }
 .services .service .service-content .h3 {
@@ -18,9 +25,36 @@
   color: rgba(67, 72, 78, 0.7);
   font-size: 14px;
 }
-.services .service .service-image {
+.services .service .service-image-wrapper {
+  height: 20rem;
+}
+.services .service .service-image-wrapper .service-image {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 20rem;
+  height: 100%;
   width: 100%;
+  max-width: 600px;
+}
+
+@media only screen and (min-width: 767px) {
+  .services {
+    padding-inline: 2rem;
+  }
+  .services .service {
+    gap: 0px 3rem;
+  }
+  .services .service:nth-child(odd) {
+    flex-direction: row;
+  }
+  .services .service:nth-child(even) {
+    flex-direction: row-reverse;
+    background-position: bottom left;
+  }
+  .services .service .service-content,
+  .services .service .service-image-wrapper {
+    flex: 1;
+  }
+  .services .service .service-image-wrapper {
+    margin-block: auto;
+  }
 }/*# sourceMappingURL=services.css.map */

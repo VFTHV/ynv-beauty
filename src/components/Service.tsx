@@ -23,8 +23,12 @@ function Service({ service }: ServiceProps) {
         </InViewAnimate>
         <InViewAnimate>{renderParagraph()}</InViewAnimate>
       </article>
-      <InViewAnimate>
-        <img className="service-image" src={service.imgSrc} alt="" />
+      <InViewAnimate className="service-image-wrapper">
+        <img
+          className="service-image"
+          src={service.imgSrc}
+          alt="service picture"
+        />
       </InViewAnimate>
     </div>
   );

@@ -3,14 +3,16 @@ import { useInView } from 'framer-motion';
 
 interface InViewAnimateProps {
   children: ReactNode;
+  className?: string;
 }
 
-function InViewAnimate({ children }: InViewAnimateProps) {
+function InViewAnimate({ children, className }: InViewAnimateProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '0px 0px 150px 0px' });
 
   return (
     <div
+      className={className}
       ref={ref}
       style={{
         transform: isInView ? 'none' : 'translateY(100px)',

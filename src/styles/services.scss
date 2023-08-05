@@ -1,12 +1,20 @@
 .services {
   background-color: #fff8f5;
   padding-block: 1rem;
+  padding-inline: 0.9rem;
 
   .service {
     margin-block: 2rem;
+    background-image: url('/background4.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    display: flex;
+    flex-direction: column;
+
     .service-content {
       background-image: url('/background5.png');
-      background-size: 9rem;
+      background-size: 30vw;
       background-repeat: no-repeat;
 
       .h3 {
@@ -19,10 +27,37 @@
         font-size: 14px;
       }
     }
-    .service-image {
-      object-fit: cover;
+    .service-image-wrapper {
       height: 20rem;
-      width: 100%;
+      .service-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .services {
+    padding-inline: 2rem;
+    .service {
+      gap: 0px 3rem;
+      &:nth-child(odd) {
+        flex-direction: row;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        background-position: bottom left;
+      }
+      .service-content,
+      .service-image-wrapper {
+        flex: 1;
+      }
+      .service-image-wrapper {
+        margin-block: auto;
+      }
     }
   }
 }

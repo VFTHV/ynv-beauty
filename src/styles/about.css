@@ -5,6 +5,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .about .logo-container {
   height: 6.5rem;

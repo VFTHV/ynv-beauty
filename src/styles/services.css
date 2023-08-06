@@ -42,6 +42,7 @@
   }
   .services .service {
     gap: 0px 3rem;
+    justify-content: space-between;
   }
   .services .service:nth-child(odd) {
     flex-direction: row;

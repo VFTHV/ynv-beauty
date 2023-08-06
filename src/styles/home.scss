@@ -9,41 +9,6 @@
   cursor: pointer;
 }
 
-.cta-container {
-  margin-block: 2rem;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 1);
-
-  cursor: pointer;
-
-  .cta-btn2 {
-    background-color: rgba(255, 255, 255, 0.2);
-    display: block;
-    width: 175px;
-    height: 60px;
-  }
-  .btn-text {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    letter-spacing: 2px;
-    top: 0;
-    z-index: 2;
-  }
-
-  .button-background {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 0;
-    background-color: rgba(245, 155, 144, 1);
-  }
-}
-
 .home {
   background-image: url('/background.jpg');
   background-size: cover;

@@ -20,4 +20,15 @@
   border-radius: 2rem;
   padding: 1px;
   transform: scale(1.4);
+}
+
+@media only screen and (min-width: 991px) {
+  .contact-us {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 3rem;
+  }
+  .contact-us > * {
+    flex: 1;
+  }
 }/*# sourceMappingURL=contact_us.css.map */

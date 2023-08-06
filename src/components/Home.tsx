@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react';
-import { Link } from 'react-scroll';
 import { HiOutlineMenu } from 'react-icons/hi';
 import '../styles/home.css';
 import SideMenu from './SideMenu';
+import BookNow from './BookNow';
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +30,7 @@ function Home() {
             size={35}
             onClick={handleMenuToggle}
           />
-          <div className="cta-container">
-            <Link className="cta-btn2" to="contact-us" {...scrollProps}>
-              <div className="btn-text">Book Now</div>
-              <div className="button-background"></div>
-            </Link>
-          </div>
+          <BookNow scrollProps={scrollProps} />
         </div>
       </header>
       <SideMenu
@@ -46,12 +41,7 @@ function Home() {
       />
       <div className="home-content">
         <h1 className="h1">YnV Beauty</h1>
-        <div className="cta-container">
-          <Link className="cta-btn2" to="contact-us" {...scrollProps}>
-            <div className="btn-text">Book Now</div>
-            <div className="button-background"></div>
-          </Link>
-        </div>
+        <BookNow scrollProps={scrollProps} />
       </div>
     </section>
   );

@@ -90,4 +90,21 @@ address {
   .h2 {
     font-size: 54px;
   }
+}
+@media only screen and (min-width: 991px) {
+  .container {
+    padding-inline: 3rem;
+  }
+  .h1 {
+    font-size: 166px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .container {
+    padding-inline: auto;
+  }
+  .wrapper {
+    max-width: 1320px;
+    margin-inline: auto;
+  }
 }/*# sourceMappingURL=basic_styles.css.map */

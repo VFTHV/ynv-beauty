@@ -1,5 +1,8 @@
 .contact-us {
   background-image: url("/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-block: 2.5rem;
 }
 .contact-us .contact-details {

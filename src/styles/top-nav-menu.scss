@@ -1,0 +1,27 @@
+.top-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 991px) {
+  .top-nav {
+    display: block;
+    width: 20rem;
+    margin: 0 auto;
+
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      li {
+        width: 100px;
+        text-align: center;
+
+        .nav-item {
+          letter-spacing: 3px;
+          cursor: pointer;
+          display: block;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { HiOutlineMenu } from 'react-icons/hi';
 import '../styles/home.css';
 import SideMenu from './SideMenu';
 import BookNow from './BookNow';
+import TopNavMenu from './TopNavMenu';
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +34,8 @@ function Home() {
           <BookNow scrollProps={scrollProps} />
         </div>
       </header>
+      <TopNavMenu scrollProps={scrollProps} />
+
       <SideMenu
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}

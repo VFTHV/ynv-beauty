@@ -62,31 +62,12 @@
       position: absolute;
       right: 0;
       cursor: pointer;
-    }
-  }
-  .nav-head {
-    position: fixed;
-    top: 0;
-    left: -20rem;
-    bottom: 0;
-    width: 20rem;
-    background-color: rgba(0, 0, 0, $alpha: 0.5);
-    .nav-items {
-      padding: 3rem;
-      li {
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        .nav-item {
-          cursor: pointer;
-          display: block;
-          height: 100%;
-          width: 100%;
-          font-size: 13px;
-        }
+      .cta-container {
+        display: none;
       }
     }
   }
+
   .home-content {
     flex: 1;
     display: flex;
@@ -117,6 +98,23 @@
     }
     &:hover {
       border-color: rgba(245, 156, 144, 1);
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .home .header {
+    height: 6rem;
+    .menu {
+      .menu-icon {
+        display: none;
+      }
+      .cta-container {
+        display: block;
+        .cta-btn2 {
+          background: none;
+        }
+      }
     }
   }
 }

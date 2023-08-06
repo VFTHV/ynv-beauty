@@ -1,0 +1,29 @@
+.nav-head {
+  position: fixed;
+  top: 0;
+  left: -20rem;
+  bottom: 0;
+  width: 20rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-head .nav-items {
+  padding: 3rem;
+}
+.nav-head .nav-items li {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.nav-head .nav-items li .nav-item {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 991px) {
+  .nav-head {
+    display: none;
+  }
+}/*# sourceMappingURL=side-menu.css.map */

@@ -19,4 +19,3 @@ function App() {
 export default App;
 
 // COMMENT #1: ADD HOME SCROLL EFFECT
-// COMMENT #2: ADD HOME APPEAR EFFECT

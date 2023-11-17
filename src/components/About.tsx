@@ -1,9 +1,5 @@
 import '../styles/about.css';
 import InViewAnimate from './InViewAnimate';
-// to add item to about
-// to add item to about
-// to add item to about
-// to add item to about
 
 function About() {
   return (

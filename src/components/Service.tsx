@@ -3,8 +3,6 @@ import InViewAnimate from './InViewAnimate';
 interface ServiceProps {
   service: { h3: string; text: string | string[]; imgSrc: string };
 }
-// new services
-// new services
 function Service({ service }: ServiceProps) {
   const renderParagraph = () => {
     if (Array.isArray(service.text)) {

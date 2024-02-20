@@ -7,7 +7,6 @@ interface ServiceProps {
 // new services
 // new services
 // new services
-// new services
 function Service({ service }: ServiceProps) {
   const renderParagraph = () => {
     if (Array.isArray(service.text)) {

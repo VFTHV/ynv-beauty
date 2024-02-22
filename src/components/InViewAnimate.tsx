@@ -5,6 +5,7 @@ interface InViewAnimateProps {
   children: ReactNode;
   className?: string;
 }
+// in view animate effect
 
 function InViewAnimate({ children, className }: InViewAnimateProps) {
   const ref = useRef(null);

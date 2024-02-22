@@ -11,6 +11,7 @@ interface InViewAnimateProps {
 // in view animate effect
 // in view animate effect
 // in view animate effect
+// in view animate effect
 
 function InViewAnimate({ children, className }: InViewAnimateProps) {
   const ref = useRef(null);

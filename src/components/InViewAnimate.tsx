@@ -1,4 +1,4 @@
-import { useRef, ReactNode, useEffect } from 'react';
+import { useRef, ReactNode } from 'react';
 import { useInView } from 'framer-motion';
 
 interface InViewAnimateProps {
